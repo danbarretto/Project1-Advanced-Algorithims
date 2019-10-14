@@ -25,6 +25,7 @@ for i in range(mLics):
     licensas[i][1] = int(licensas[i][1])
     licensas[i][2] = float(licensas[i][2])
     visitados.append(False)
+
 #Licensas ordenadas de acordo com tempo de início    
 licensas.sort(key = sortFirst)
 
@@ -36,7 +37,7 @@ for i in range(mLics):
         ant = licensas[i][0]
 mes = 0
 
-#Caso não há licensa que comece em janeiro, problema não tem solução
+#Caso não há licensa que não comece em janeiro, problema não tem solução
 if int(licensas[0][0]) != 0:
     print("Não há solução.")
     exit()
